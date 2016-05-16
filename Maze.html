@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maze 3D</title>
+   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/vshandprinted" type="text/css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+
+    </style>
+  </head>
+
+<body BGCOLOR="white" onload="main()">
+      <canvas id="webgl" width="1000" height="600" style="position: absolute; z-index: 0">
+              use a browser that supports canvas
+      </canvas>
+      <canvas tabindex="1" id="maze" width="1000" height="600" style="position: absolute; z-index: 1">
+              use a browser that supports canvas
+      </canvas>
+    <audio id="ambientSound">
+        <source src="resources/sound5.ogg" type="audio/ogg">
+    </audio>
+    <audio id="screamerSound">
+        <source src="resources/gato.ogg" type="audio/ogg">
+    </audio>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/maze.js"></script>
+    <script src="lib/shapes.js"></script>
+    <script src="Maze.js"></script>
+</body>
+</html>
